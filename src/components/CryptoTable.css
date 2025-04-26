@@ -1,0 +1,78 @@
+/* src/components/CryptoTable.css */
+
+.crypto-table-container {
+    overflow-x: auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    min-height: 60vh;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+    color: #111827; /* Almost black */
+  }
+  
+  .crypto-table thead {
+    background-color: #ffffff;
+    color: #000000; /* Tailwind gray-500 */
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .crypto-table th {
+    padding: 12px 16px;
+    font-weight: 600;
+  }
+  
+  .crypto-table td {
+    padding: 16px;
+    vertical-align: middle;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  
+  .crypto-table tbody tr {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .crypto-table tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .crypto-table img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .crypto-table .positive {
+    color: #16c784; /* Light green */
+    font-weight: bold;
+  }
+  
+  .crypto-table .negative {
+    color: #ea3943; /* Light red */
+    font-weight: bold;
+  }
+  
+  .crypto-table .supply-text {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+  
+  .crypto-table td:last-child {
+    text-align: right;
+  }
+  
+  .crypto-table .chart-img {
+    width: 100px;
+    height: auto;
+  }
+  
