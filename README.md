@@ -1,12 +1,66 @@
-# React + Vite
+# 🚀 Real-Time Crypto Price Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React + Redux Toolkit app that simulates real-time crypto price updates, inspired by CoinMarketCap.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Redux Toolkit
+- JavaScript (ES6+)
+- CSS3 (Responsive Design)
+- Mock WebSocket (using setInterval)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🏗️ Architecture Overview
+
+/src
+  /app
+    store.js            # Redux store setup
+  /features
+    /crypto
+      cryptoSlice.js     # Redux slice for crypto data
+      cryptoSelectors.js # Memoized selectors for optimization
+  /components
+    CryptoTable.jsx      # Main table displaying crypto data
+    CryptoRow.jsx        # Single crypto row component
+  /utils
+    mockSocket.js        # Mock WebSocket simulation
+    sampleData.js        # Static sample crypto data
+  App.jsx                # Main App component
+  index.js               # App entry point
+CryptoTable.css          # Styles for crypto table
+
+## ✨ Features
+
+- 🚀 Simulated real-time crypto updates (price, % changes, volume)
+- 📈 Color-coded price changes (green for positive, red for negative)
+- 🖥️ Responsive design for desktop and mobile
+- 📊 Static 7D chart for each asset
+- 🧠 Optimized state management using Redux selectors
+- 🔄 Updates every 1-2 seconds (mock WebSocket simulation)
+
+🚀 Setup Instructions
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+2. Install dependencies
+bash
+Copy
+Edit
+npm install
+3. Run the project locally
+bash
+Copy
+Edit
+npm start
+4. Open your browser and visit
+plaintext
+Copy
+Edit
+http://localhost:3000/
