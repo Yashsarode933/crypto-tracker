@@ -47,7 +47,7 @@ CryptoTable.css          # Styles for crypto table
 bash
 Copy
 Edit
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+git clone https://github.com/Yashsarode933/crypto-tracker.git
 cd YOUR-REPO-NAME
 2. Install dependencies
 bash
