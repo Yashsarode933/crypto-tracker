@@ -1,5 +1,3 @@
-![Banner](./assets/banner.png)
-
 # 🚀 Real-Time Crypto Price Tracker
 
 A responsive React + Redux Toolkit app that simulates real-time crypto price updates, inspired by CoinMarketCap.
